@@ -61,26 +61,7 @@ public class Day01 {
    // one99one
    public static int getPartTwoNumber(String line) {
        int count = 0;
-
-
-       char dir = line.charAt(0);
-       int amount = Integer.parseInt(line.substring(1));
-
-
-       // For movement, only amount % 100 affects final position
-       int moveSteps = amount % 100;
-
-
-       // For counting passes, we must simulate the full amount
-       for (int i = 0; i < amount; i++) {
-           if (dir == 'L') x = (x + 99) % 100;
-           else x = (x + 1) % 100;
-
-
-           if (x == 0) count++;
-       }
-
-
+       // idfk LOL
        return count;
    }
    public static ArrayList<String> getFileData(String fileName) {
